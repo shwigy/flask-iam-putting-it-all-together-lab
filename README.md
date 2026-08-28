@@ -292,3 +292,9 @@ Optional Best Practice documentation steps:
 CodeGrade will use the same test suite as the test suite included.
 
 Once all tests are passing, commit and push your work using `git` to submit to CodeGrade through Canvas.
+
+## Implementation Notes
+
+- `User` and `Recipe` models, with bcrypt password hashing and validations, live in `server/models.py`.
+- Auth/recipe routes (`/signup`, `/check_session`, `/login`, `/logout`, `/recipes`) are implemented in `server/app.py` using Flask sessions.
+- Run `pytest` from the project root to verify (19 tests, all passing).
